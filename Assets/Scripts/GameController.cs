@@ -117,22 +117,22 @@ public class GameController : MonoBehaviour
             {
                 if (seconds < 10)
                 {
-                    timerText.text = "Время " + hours + " : 0" + minutes + " : 0" + seconds;
+                    timerText.text = "" + hours + " : 0" + minutes + " : 0" + seconds;
                 }
                 else
                 {
-                    timerText.text = "Время " + hours + " : 0" + minutes + " : " + seconds;
+                    timerText.text = "" + hours + " : 0" + minutes + " : " + seconds;
                 }
             }
             else
             {
                 if (seconds < 10)
                 {
-                    timerText.text = "Время " + hours + " : " + minutes + " : 0" + seconds;
+                    timerText.text = "" + hours + " : " + minutes + " : 0" + seconds;
                 }
                 else
                 {
-                    timerText.text = "Время " + hours + " : " + minutes + " : " + seconds;
+                    timerText.text = "" + hours + " : " + minutes + " : " + seconds;
                 }
             }
         }
@@ -142,29 +142,29 @@ public class GameController : MonoBehaviour
             {
                 if (seconds < 10)
                 {
-                    timerText.text = "Время  0" + minutes + " : 0" + seconds;
+                    timerText.text = "0" + minutes + " : 0" + seconds;
                 }
                 else
                 {
-                    timerText.text = "Время 0" + minutes + " : " + seconds;
+                    timerText.text = "0" + minutes + " : " + seconds;
                 }
             }
             else
             {
                 if (seconds < 10)
                 {
-                    timerText.text = "Время " + minutes + " : 0" + seconds;
+                    timerText.text = "" + minutes + " : 0" + seconds;
                 }
                 else
                 {
-                    timerText.text = "Время " + minutes + " : " + seconds;
+                    timerText.text = "" + minutes + " : " + seconds;
                 }
             }
 
         }
         else
         {
-            timerText.text = "Время " + seconds.ToString();
+            timerText.text = "" + seconds.ToString();
         }
     }
     public void ShowGetPoint()
