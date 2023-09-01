@@ -12022,7 +12022,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -21724,7 +21724,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -29324,8 +29324,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 357.52, y: -49.169018}
-  m_SizeDelta: {x: 134.9026, y: 98.338}
+  m_AnchoredPosition: {x: 337.38, y: -49.169}
+  m_SizeDelta: {x: 103.3215, y: 78.3765}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &648582809
 MonoBehaviour:
@@ -42146,7 +42146,7 @@ PrefabInstance:
     - target: {fileID: 5640177952707327298, guid: fcf05aeb6abf0dc4ca356a0c06ec3fea,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1.3996
+      value: 1.3995972
       objectReference: {fileID: 0}
     - target: {fileID: 5640177952940844866, guid: fcf05aeb6abf0dc4ca356a0c06ec3fea,
         type: 3}
@@ -50289,8 +50289,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_HorizontalAlignment: 4
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -83062,8 +83062,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -65}
-  m_SizeDelta: {x: 509.1096, y: 73.126}
+  m_AnchoredPosition: {x: -412, y: -65}
+  m_SizeDelta: {x: 424.97, y: 73.126}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1795067348
 MonoBehaviour:
@@ -83121,7 +83121,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -87949,8 +87949,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 225.98328, y: -82.63599}
-  m_SizeDelta: {x: 424.9733, y: 133.61}
+  m_AnchoredPosition: {x: 668, y: -60.847}
+  m_SizeDelta: {x: 424.9733, y: 93.305}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1899580577 stripped
 GameObject:
