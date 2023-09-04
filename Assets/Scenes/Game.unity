@@ -65339,7 +65339,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 3177f6bd3ea0a0549a032503a9bffaf2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.00002
+      value: 0.0001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3177f6bd3ea0a0549a032503a9bffaf2,
         type: 3}
@@ -70430,6 +70430,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: IronHeart2021_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b542e02ace1a6fb439de41e3370b8abb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2654713335656134247, guid: b542e02ace1a6fb439de41e3370b8abb,
         type: 3}
