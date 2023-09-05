@@ -4,47 +4,55 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
-    
     public GameObject placeHat;
     public GameObject placeBack;
-    public GameObject placeArms;
-    public GameObject placeLegs;
+    public GameObject placeBody;
+    public GameObject placeFace;
+    public GameObject placeArmsLeft;
+    public GameObject placeArmsRight;
+    public GameObject placeForearmsLeft;
+    public GameObject placeForearmsRight;
 
     private int i = 0;
     private int countDecorHats;
     private int countDecorBacks;
-    private int countDecorArms;
-    private int countDecorLegs;
-
+    private int countDecorBody;
+    private int countDecorFace;
+    private int countDecorArmsLeft;
+    private int countDecorArmsRight;
+    private int countDecorForearmsLeft;
+    private int countDecorForearmsRight;
 
     private void Start()
     {
         countDecorHats = placeHat.transform.childCount - 1;
         countDecorBacks = placeBack.transform.childCount - 1;
-        countDecorArms = placeArms.transform.childCount - 1;
-        countDecorLegs = placeLegs.transform.childCount - 1;
-    }
-
-    public void Next()
-    {
-
-    }
-
-    public void Pre()
-    {
-
+        countDecorBody = placeBody.transform.childCount - 1;
+        countDecorFace = placeFace.transform.childCount - 1;
+        countDecorArmsLeft = placeArmsLeft.transform.childCount - 1;
+        countDecorArmsRight = placeArmsRight.transform.childCount - 1;
+        countDecorForearmsLeft = placeForearmsLeft.transform.childCount - 1;
+        countDecorForearmsRight = placeForearmsRight.transform.childCount - 1;
     }
 
     public void LoadStart()
     {
         ResetDecor(placeHat, countDecorHats);
         ResetDecor(placeBack, countDecorBacks);
-        ResetDecor(placeArms, countDecorArms);
-        ResetDecor(placeLegs, countDecorLegs);
+        ResetDecor(placeBody, countDecorBody);
+        ResetDecor(placeFace, countDecorFace);
+        ResetDecor(placeArmsLeft, countDecorArmsLeft);
+        ResetDecor(placeArmsRight, countDecorArmsRight);
+        ResetDecor(placeForearmsLeft, countDecorForearmsLeft);
+        ResetDecor(placeForearmsRight, countDecorForearmsRight);
         placeHat.transform.GetChild(PlayerPrefs.GetInt("Hat")).gameObject.SetActive(true);
         placeBack.transform.GetChild(PlayerPrefs.GetInt("Back")).gameObject.SetActive(true);
-        placeArms.transform.GetChild(PlayerPrefs.GetInt("Arms")).gameObject.SetActive(true);
-        placeLegs.transform.GetChild(PlayerPrefs.GetInt("Legs")).gameObject.SetActive(true);
+        placeBody.transform.GetChild(PlayerPrefs.GetInt("Body")).gameObject.SetActive(true);
+        placeFace.transform.GetChild(PlayerPrefs.GetInt("Face")).gameObject.SetActive(true);
+        placeArmsLeft.transform.GetChild(PlayerPrefs.GetInt("Arms")).gameObject.SetActive(true);
+        placeArmsRight.transform.GetChild(PlayerPrefs.GetInt("Arms")).gameObject.SetActive(true);
+        placeForearmsLeft.transform.GetChild(PlayerPrefs.GetInt("Forearms")).gameObject.SetActive(true);
+        placeForearmsRight.transform.GetChild(PlayerPrefs.GetInt("Forearms")).gameObject.SetActive(true);
     }
 
     public void ResetDecor(GameObject placeOnPerk, int count)
@@ -53,6 +61,7 @@ public class Shop : MonoBehaviour
         {
             placeOnPerk.transform.GetChild(j).gameObject.SetActive(false);
         }
+        placeOnPerk.transform.GetChild(0).gameObject.SetActive(true);
     }
 
     public void SelectHat(int numberDecor)
@@ -71,19 +80,36 @@ public class Shop : MonoBehaviour
         placeBack.transform.GetChild(numberDecor).gameObject.SetActive(true);
     }
 
+    public void SelectBody(int numberDecor)
+    {
+        // 0 - none (empty object), 1 - first decor, 2 - second decor...
+        ResetDecor(placeBody, countDecorBody);
+        PlayerPrefs.SetInt("Body", numberDecor);
+        placeBody.transform.GetChild(numberDecor).gameObject.SetActive(true);
+    }
+    public void SelectFace(int numberDecor)
+    {
+        // 0 - none (empty object), 1 - first decor, 2 - second decor...
+        ResetDecor(placeFace, countDecorFace);
+        PlayerPrefs.SetInt("Face", numberDecor);
+        placeFace.transform.GetChild(numberDecor).gameObject.SetActive(true);
+    }
     public void SelectArms(int numberDecor)
     {
         // 0 - none (empty object), 1 - first decor, 2 - second decor...
-        ResetDecor(placeArms, countDecorArms);
+        ResetDecor(placeArmsLeft, countDecorArmsLeft);
+        ResetDecor(placeArmsRight, countDecorArmsRight);
         PlayerPrefs.SetInt("Arms", numberDecor);
-        placeArms.transform.GetChild(numberDecor).gameObject.SetActive(true);
+        placeArmsLeft.transform.GetChild(numberDecor).gameObject.SetActive(true);
+        placeArmsRight.transform.GetChild(numberDecor).gameObject.SetActive(true);
     }
-
-    public void SelectLegs(int numberDecor)
+    public void SelectForeArms(int numberDecor)
     {
         // 0 - none (empty object), 1 - first decor, 2 - second decor...
-        ResetDecor(placeLegs, countDecorLegs);
-        PlayerPrefs.SetInt("Legs", numberDecor);
-        placeLegs.transform.GetChild(numberDecor).gameObject.SetActive(true);
+        ResetDecor(placeForearmsLeft, countDecorForearmsLeft);
+        ResetDecor(placeForearmsRight, countDecorForearmsRight);
+        PlayerPrefs.SetInt("Forearms", numberDecor);
+        placeForearmsLeft.transform.GetChild(numberDecor).gameObject.SetActive(true);
+        placeForearmsRight.transform.GetChild(numberDecor).gameObject.SetActive(true);
     }
 }
