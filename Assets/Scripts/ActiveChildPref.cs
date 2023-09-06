@@ -8,17 +8,17 @@ public class ActiveChildPref : MonoBehaviour
     public Button buttonSelect;
     void Update()
     {
-        /*
+       
         if (PlayerPrefs.GetInt(gameObject.name) == 1) 
         {
             gameObject.transform.GetChild(0).gameObject.SetActive(false);
-            buttonSelect.interactable = true;
+            //buttonSelect.interactable = true;
         }
         else
         {
             gameObject.transform.GetChild(0).gameObject.SetActive(true);
-            buttonSelect.interactable = false;
+           //buttonSelect.interactable = false;
         }
-        */
+        
     }
 }

@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class DisableeForReward : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (PlayerPrefs.GetInt(gameObject.name) == 1)
+        {
+            gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        }
+        else
+        {
+            gameObject.transform.GetChild(0).gameObject.SetActive(true);
+           
+        }
     }
 }
