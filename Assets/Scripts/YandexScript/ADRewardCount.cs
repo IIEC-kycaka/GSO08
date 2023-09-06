@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ADRewardCount : MonoBehaviour
 {
     private string lastIsAdsOpen = null;
-
+    /*
     public Button selectButton;
     public GameObject buttonMan;
     public GameObject buttonGirl;
@@ -15,7 +15,7 @@ public class ADRewardCount : MonoBehaviour
     public GameObject buttonJacob;
     public GameObject buttonSparks;
     public GameObject buttonDevxero;
-
+    */
     void Start()
     {
         ShowAdInterstitial();
@@ -79,7 +79,7 @@ public class ADRewardCount : MonoBehaviour
         {
             selectButton.interactable = true;
         }*/
-        if(buttonMan.activeSelf) selectButton.interactable = true;
+       // if(buttonMan.activeSelf) selectButton.interactable = true;
     }
 
     public void ShowAdInterstitial()
