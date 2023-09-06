@@ -13,14 +13,14 @@ public class ChoosePerk : MonoBehaviour
 
     private void Start()
     {
-        i = PlayerPrefs.GetInt("Perk");
+        //i = PlayerPrefs.GetInt("Perk");
         Debug.Log("Perk на старте " + PlayerPrefs.GetInt("Perk"));
         for (int j = 0; j < perk.transform.childCount-1; j++)
         {
             playerArmature.transform.GetChild(1).transform.GetChild(i).gameObject.SetActive(false); 
         }
         perk.transform.GetChild(i).gameObject.SetActive(true);
-        Select();
+       // Select();
 
     }
 

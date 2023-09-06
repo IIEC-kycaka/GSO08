@@ -64,6 +64,7 @@ public class ADRewardCount : MonoBehaviour
         PlayerPrefs.SetInt(pref, 1);
     }
 
+
     public void InteractableButton()
     {
         /*

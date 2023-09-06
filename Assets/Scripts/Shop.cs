@@ -25,14 +25,21 @@ public class Shop : MonoBehaviour
 
     private void Start()
     {
-        countDecorHats = placeHat.transform.childCount - 1;
-        countDecorBacks = placeBack.transform.childCount - 1;
-        countDecorBody = placeBody.transform.childCount - 1;
-        countDecorFace = placeFace.transform.childCount - 1;
-        countDecorArmsLeft = placeArmsLeft.transform.childCount - 1;
-        countDecorArmsRight = placeArmsRight.transform.childCount - 1;
-        countDecorForearmsLeft = placeForearmsLeft.transform.childCount - 1;
-        countDecorForearmsRight = placeForearmsRight.transform.childCount - 1;
+        if (!PlayerPrefs.HasKey("Hat")) PlayerPrefs.SetInt("Hat", 0);
+        if (!PlayerPrefs.HasKey("Back")) PlayerPrefs.SetInt("Back", 0);
+        if (!PlayerPrefs.HasKey("Body")) PlayerPrefs.SetInt("Body", 0);
+        if (!PlayerPrefs.HasKey("Face")) PlayerPrefs.SetInt("Face", 0);
+        if (!PlayerPrefs.HasKey("Arms")) PlayerPrefs.SetInt("Arms", 0);
+        if (!PlayerPrefs.HasKey("Forearms")) PlayerPrefs.SetInt("Forearms", 0);
+        countDecorHats = placeHat.transform.childCount;
+        countDecorBacks = placeBack.transform.childCount;
+        countDecorBody = placeBody.transform.childCount;
+        countDecorFace = placeFace.transform.childCount;
+        countDecorArmsLeft = placeArmsLeft.transform.childCount;
+        countDecorArmsRight = placeArmsRight.transform.childCount;
+        countDecorForearmsLeft = placeForearmsLeft.transform.childCount;
+        countDecorForearmsRight = placeForearmsRight.transform.childCount;
+        LoadStart();
     }
 
     public void LoadStart()
@@ -70,6 +77,7 @@ public class Shop : MonoBehaviour
         ResetDecor(placeHat, countDecorHats);
         PlayerPrefs.SetInt("Hat", numberDecor);
         placeHat.transform.GetChild(numberDecor).gameObject.SetActive(true);
+        Debug.Log("Ўл€па выбрана под номером " + PlayerPrefs.GetInt("Hat"));
     }
 
     public void SelectBack(int numberDecor)
