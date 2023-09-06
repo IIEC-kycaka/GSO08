@@ -39304,6 +39304,7 @@ GameObject:
   - component: {fileID: 774388443}
   - component: {fileID: 774388442}
   - component: {fileID: 774388441}
+  - component: {fileID: 774388444}
   m_Layer: 5
   m_Name: ShowRewardForForearms_1
   m_TagString: Untagged
@@ -39399,10 +39400,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 352446448}
-        m_TargetAssemblyTypeName: ADRewardCount, Assembly-CSharp
+      - m_Target: {fileID: 774388444}
+        m_TargetAssemblyTypeName: SetPrefReward, Assembly-CSharp
         m_MethodName: SetDecor
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -39497,6 +39498,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774388439}
   m_CullTransparentMesh: 1
+--- !u!114 &774388444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774388439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c28ffb84e50e2849a3d3cb98a49abc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &775501670 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d477e5818868e3f479aab5c607ea7375,
@@ -50460,6 +50473,7 @@ GameObject:
   - component: {fileID: 964306296}
   - component: {fileID: 964306295}
   - component: {fileID: 964306294}
+  - component: {fileID: 964306297}
   m_Layer: 5
   m_Name: ShowRewardForBody_1
   m_TagString: Untagged
@@ -50567,10 +50581,10 @@ MonoBehaviour:
           m_StringArgument: Girl
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 352446448}
-        m_TargetAssemblyTypeName: ADRewardCount, Assembly-CSharp
+      - m_Target: {fileID: 964306297}
+        m_TargetAssemblyTypeName: SetPrefReward, Assembly-CSharp
         m_MethodName: SetDecor
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -50665,6 +50679,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964306292}
   m_CullTransparentMesh: 1
+--- !u!114 &964306297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964306292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c28ffb84e50e2849a3d3cb98a49abc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &964607981 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 779357557067477051, guid: 4516a9c2337b4eb081390cec5c199c96,
@@ -64392,6 +64418,7 @@ GameObject:
   - component: {fileID: 1202463697}
   - component: {fileID: 1202463696}
   - component: {fileID: 1202463695}
+  - component: {fileID: 1202463698}
   m_Layer: 5
   m_Name: ShowRewardForFace_2
   m_TagString: Untagged
@@ -64499,10 +64526,10 @@ MonoBehaviour:
           m_StringArgument: Girl
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 352446448}
-        m_TargetAssemblyTypeName: ADRewardCount, Assembly-CSharp
+      - m_Target: {fileID: 1202463698}
+        m_TargetAssemblyTypeName: SetPrefReward, Assembly-CSharp
         m_MethodName: SetDecor
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -64597,6 +64624,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202463693}
   m_CullTransparentMesh: 1
+--- !u!114 &1202463698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202463693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c28ffb84e50e2849a3d3cb98a49abc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1203084833 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 7c9fb993626aaf8488be64eb9feadbbc,
@@ -80870,6 +80909,7 @@ GameObject:
   - component: {fileID: 1507419175}
   - component: {fileID: 1507419174}
   - component: {fileID: 1507419173}
+  - component: {fileID: 1507419176}
   m_Layer: 5
   m_Name: ShowRewardForFace_1
   m_TagString: Untagged
@@ -80965,10 +81005,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 352446448}
-        m_TargetAssemblyTypeName: ADRewardCount, Assembly-CSharp
+      - m_Target: {fileID: 1507419176}
+        m_TargetAssemblyTypeName: SetPrefReward, Assembly-CSharp
         m_MethodName: SetDecor
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -81075,6 +81115,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507419171}
   m_CullTransparentMesh: 1
+--- !u!114 &1507419176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507419171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c28ffb84e50e2849a3d3cb98a49abc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1510274405
 GameObject:
   m_ObjectHideFlags: 0
@@ -88068,6 +88120,7 @@ GameObject:
   - component: {fileID: 1650545840}
   - component: {fileID: 1650545839}
   - component: {fileID: 1650545838}
+  - component: {fileID: 1650545841}
   m_Layer: 5
   m_Name: ShowRewardForHat_2
   m_TagString: Untagged
@@ -88163,10 +88216,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 352446448}
-        m_TargetAssemblyTypeName: ADRewardCount, Assembly-CSharp
+      - m_Target: {fileID: 1650545841}
+        m_TargetAssemblyTypeName: SetPrefReward, Assembly-CSharp
         m_MethodName: SetDecor
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -88273,6 +88326,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650545836}
   m_CullTransparentMesh: 1
+--- !u!114 &1650545841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650545836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c28ffb84e50e2849a3d3cb98a49abc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1651852643
 GameObject:
   m_ObjectHideFlags: 0
@@ -89086,6 +89151,7 @@ GameObject:
   - component: {fileID: 1671348930}
   - component: {fileID: 1671348929}
   - component: {fileID: 1671348928}
+  - component: {fileID: 1671348931}
   m_Layer: 5
   m_Name: ShowRewardForHat_1
   m_TagString: Untagged
@@ -89181,10 +89247,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 352446448}
-        m_TargetAssemblyTypeName: ADRewardCount, Assembly-CSharp
+      - m_Target: {fileID: 1671348931}
+        m_TargetAssemblyTypeName: SetPrefReward, Assembly-CSharp
         m_MethodName: SetDecor
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -89291,6 +89357,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671348926}
   m_CullTransparentMesh: 1
+--- !u!114 &1671348931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671348926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c28ffb84e50e2849a3d3cb98a49abc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1672154440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -98269,6 +98347,7 @@ GameObject:
   - component: {fileID: 1823969046}
   - component: {fileID: 1823969045}
   - component: {fileID: 1823969044}
+  - component: {fileID: 1823969047}
   m_Layer: 5
   m_Name: ShowRewardForBack_1
   m_TagString: Untagged
@@ -98376,10 +98455,10 @@ MonoBehaviour:
           m_StringArgument: Girl
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 352446448}
-        m_TargetAssemblyTypeName: ADRewardCount, Assembly-CSharp
+      - m_Target: {fileID: 1823969047}
+        m_TargetAssemblyTypeName: SetPrefReward, Assembly-CSharp
         m_MethodName: SetDecor
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -98474,6 +98553,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823969042}
   m_CullTransparentMesh: 1
+--- !u!114 &1823969047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823969042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c28ffb84e50e2849a3d3cb98a49abc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1824135678 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8423974037750839972, guid: a9b7e91fdc1b4ca381f100b98d504d4b,
@@ -105294,6 +105385,7 @@ GameObject:
   - component: {fileID: 1969119340}
   - component: {fileID: 1969119339}
   - component: {fileID: 1969119338}
+  - component: {fileID: 1969119341}
   m_Layer: 5
   m_Name: ShowRewardForBody_2
   m_TagString: Untagged
@@ -105401,10 +105493,10 @@ MonoBehaviour:
           m_StringArgument: Girl
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 352446448}
-        m_TargetAssemblyTypeName: ADRewardCount, Assembly-CSharp
+      - m_Target: {fileID: 1969119341}
+        m_TargetAssemblyTypeName: SetPrefReward, Assembly-CSharp
         m_MethodName: SetDecor
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -105499,6 +105591,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1969119336}
   m_CullTransparentMesh: 1
+--- !u!114 &1969119341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969119336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c28ffb84e50e2849a3d3cb98a49abc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1970377023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -109356,6 +109460,7 @@ GameObject:
   - component: {fileID: 2041227969}
   - component: {fileID: 2041227968}
   - component: {fileID: 2041227967}
+  - component: {fileID: 2041227970}
   m_Layer: 5
   m_Name: ShowRewardForBack_2
   m_TagString: Untagged
@@ -109463,10 +109568,10 @@ MonoBehaviour:
           m_StringArgument: Girl
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 352446448}
-        m_TargetAssemblyTypeName: ADRewardCount, Assembly-CSharp
+      - m_Target: {fileID: 2041227970}
+        m_TargetAssemblyTypeName: SetPrefReward, Assembly-CSharp
         m_MethodName: SetDecor
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -109561,6 +109666,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2041227965}
   m_CullTransparentMesh: 1
+--- !u!114 &2041227970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041227965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c28ffb84e50e2849a3d3cb98a49abc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2041422569 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7242450453789606078, guid: d5955369f5d230b4ca5e90b93e5e4a96,
@@ -112915,6 +113032,7 @@ GameObject:
   - component: {fileID: 2096599749}
   - component: {fileID: 2096599748}
   - component: {fileID: 2096599747}
+  - component: {fileID: 2096599750}
   m_Layer: 5
   m_Name: ShowRewardForArms
   m_TagString: Untagged
@@ -113022,10 +113140,10 @@ MonoBehaviour:
           m_StringArgument: Girl
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 352446448}
-        m_TargetAssemblyTypeName: ADRewardCount, Assembly-CSharp
+      - m_Target: {fileID: 2096599750}
+        m_TargetAssemblyTypeName: SetPrefReward, Assembly-CSharp
         m_MethodName: SetDecor
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -113108,6 +113226,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096599745}
   m_CullTransparentMesh: 1
+--- !u!114 &2096599750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096599745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c28ffb84e50e2849a3d3cb98a49abc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2096780782
 GameObject:
   m_ObjectHideFlags: 0
