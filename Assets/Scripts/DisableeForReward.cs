@@ -17,4 +17,9 @@ public class DisableeForReward : MonoBehaviour
            
         }
     }
+
+    private void Start()
+    {
+        
+    }
 }
