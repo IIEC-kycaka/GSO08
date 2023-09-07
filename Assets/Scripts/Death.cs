@@ -43,11 +43,11 @@ public class Death : MonoBehaviour
         loseShop.SetActive(false);
         loseSetting.SetActive(false);
         loseProgress.SetActive(false);
-        adsWinText.text = "Это было классно!";
-        adsLoseText.text = "Не время расстраиваться!";
+        adsWinText.text = "ГРИМАС ДОВОЛЕН!";
+        adsLoseText.text = "БУДЬ АККУРАТНЕЙ!";
         yield return new WaitForSeconds(1f);
-        adsWinText.text = "Сможешь лучше?";
-        adsLoseText.text = "Время продолжать!";
+        adsWinText.text = "ПОВТОРИМ?";
+        adsLoseText.text = "ЗА ШЕЙКАМИ!";
         yield return new WaitForSeconds(1f);
 #if UNITY_WEBGL && !UNITY_EDITOR
     	WebGLPluginJS.InterstitialFunction();
