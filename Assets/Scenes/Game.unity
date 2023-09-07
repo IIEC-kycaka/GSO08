@@ -18639,6 +18639,22 @@ MonoBehaviour:
   placeArmsRight: {fileID: 710231653}
   placeForearmsLeft: {fileID: 1842576647}
   placeForearmsRight: {fileID: 1365183682}
+  imageHat_0: {fileID: 713216736}
+  imageHat_1: {fileID: 2072342311}
+  imageHat_2: {fileID: 149806927}
+  imageBack_0: {fileID: 1725598369}
+  imageBack_1: {fileID: 866336621}
+  imageBack_2: {fileID: 1393747599}
+  imageBody_0: {fileID: 622138654}
+  imageBody_1: {fileID: 1535832487}
+  imageBody_2: {fileID: 2086282571}
+  imageFace_0: {fileID: 972622521}
+  imageFace_1: {fileID: 1007964858}
+  imageFace_2: {fileID: 279577177}
+  imageArms_0: {fileID: 2006527068}
+  imageArms_1: {fileID: 1658755627}
+  imageForearms_0: {fileID: 2012485019}
+  imageForearms_1: {fileID: 1610840997}
 --- !u!1001 &353062257
 PrefabInstance:
   m_ObjectHideFlags: 0
