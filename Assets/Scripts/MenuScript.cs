@@ -7,7 +7,7 @@ public class MenuScript : MonoBehaviour
     public GameObject pauseDesktop;
     public StarterAssetsInputs input;
     public AutoSwitchDevices autoSwitchDevices;
-    
+
 
     private void Awake()
     {
