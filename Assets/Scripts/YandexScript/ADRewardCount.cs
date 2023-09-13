@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class ADRewardCount : MonoBehaviour
 {
     private string lastIsAdsOpen = null;
+
+    public static bool RewardOpenning = false;
+
     public static bool RewardLocked = false;
     /*
     public Button selectButton;
@@ -20,7 +23,6 @@ public class ADRewardCount : MonoBehaviour
     void Start()
     {
         ShowAdInterstitial();
-
     }
 
     void Update()
@@ -95,6 +97,7 @@ public class ADRewardCount : MonoBehaviour
 #if UNITY_WEBGL && !UNITY_EDITOR
     	WebGLPluginJS.RewardFunction();
         RewardLocked = true;
+        RewardOpenning = true;
 #endif
     }
     public void ForReward()
@@ -123,6 +126,7 @@ public class ADRewardCount : MonoBehaviour
             PlayerPrefs.SetInt("AdsOpen", 1);
             AudioListener.pause = true;
             lastIsAdsOpen = "yes";
+            RewardOpenning = false;
         }
         else
         {
@@ -133,7 +137,9 @@ public class ADRewardCount : MonoBehaviour
                // AdsClosed();
                 lastIsAdsOpen = "no";
             }
-            RewardLocked = false;
+            if (!RewardOpenning) {
+                RewardLocked = false;
+            }
         }
 #endif
     }
