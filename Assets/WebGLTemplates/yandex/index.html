@@ -15,33 +15,33 @@
     function showAdInterstitial() {
       console.log('show Ad Interstitial');
       sdk.adv.showFullscreenAdv({
-    callbacks: {
-        onClose: function(wasShown) {
-          // some action after close
-          isAds = 'off';
-        },
-        onOpen: function() {
-          // some action on open
-          isAds = 'on';
-        }
-    }
-});
-      
+		callbacks: {
+			onClose: function(wasShown) {
+			  // some action after close
+			  isAds = 'off';
+			},
+			onOpen: function() {
+			  // some action on open
+			  isAds = 'on';
+			}
+		}
+      });      
     }
     
     function showAdReward() {
       console.log('show Ad Reward');
       sdk.adv.showRewardedVideo({    
       	callbacks: {
-        onClose: function(wasShown) {
-          // some action after close
-          isAds = 'off';
-        },
-        onOpen: function() {
-          // some action on open
-          isAds = 'on';
-        }
-    }});
+			onClose: function(wasShown) {
+			  // some action after close
+			  isAds = 'off';
+			},
+			onOpen: function() {
+			  // some action on open
+			  isAds = 'on';
+			}
+		}
+	  });
     }
 
   </script>
@@ -55,6 +55,7 @@
     </div>
   </div>
   <script>
+  var initUnity = function() {
     var buildUrl = "Build";
     var loaderUrl = buildUrl + "/{{{ LOADER_FILENAME }}}";
     var config = {
@@ -112,39 +113,49 @@
       document.body.appendChild(script);
       //var message = "1";
       //myGameInstance.SendMessage('Auth', 'CheckAuth', message);
-    </script>
-    <script>
+    }
+    
+    var player;
     var sdk = null;
     var lang = null;
     var isDevice = null;
+	
+	// инициализация игрока (вызывается через другие функции)
+	function initPlayer() {
+      return sdk.getPlayer().then(_player => {
+        player = _player;
+        return player;
+      });
+    }
+	
+	
     YaGames.init()
     .then(ysdk => {
       console.log('Yandex SDK initialized');
       sdk = ysdk;
-      initPlayer();
-      if(sdk.deviceInfo.isDesktop())
+	  if(sdk.deviceInfo.isDesktop())
       {
           isDevice = 'desktop';
       }
-      showAdInterstitial();
-      if (!(player.getMode() === 'lite')) 
-        {
-          setAuth();
-         } 
+	  sdk.getPlayer().then(_player => {
+			player = _player;
+			if (player && !(player.getMode() === 'lite')) 
+			{
+			  setAuth();
+			};
+			initUnity();			
+		}).catch((message) => {
+			initUnity();	
+		});
+		
+	    showAdInterstitial();		
       });
-    var player;
-    // инициализация игрока (вызывается через другие функции)
-    function initPlayer() {
-      return sdk.getPlayer().then(_player => {
-        player = _player;
+	  
 
-        return player;
-      });
-    }
     //функция авторизации (вызывается через другие функции)
     function auth(){
       initPlayer().then(_player => {
-        if (_player.getMode() === 'lite') {
+        if (!_player || _player.getMode() === 'lite') {
             // Игрок не авторизован.
             sdk.auth.openAuthDialog().then(() => {
                     // Игрок успешно авторизован

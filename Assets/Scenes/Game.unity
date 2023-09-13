@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.71530974, g: 0.70893145, b: 0.7275962, a: 1}
+  m_IndirectSpecularColor: {r: 0.71595377, g: 0.7100139, b: 0.73148346, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -38919,18 +38919,6 @@ MonoBehaviour:
           m_StringArgument: Forearms_1
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 352446450}
-        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: SelectForeArms
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2012485019}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -38954,18 +38942,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 774388439}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &774388442
 MonoBehaviour:
@@ -39017,6 +38993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c28ffb84e50e2849a3d3cb98a49abc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shop: {fileID: 352446450}
 --- !u!1 &775501670 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d477e5818868e3f479aab5c607ea7375,
@@ -50176,18 +50153,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 352446450}
-        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: SelectBody
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: Girl
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 964306297}
         m_TargetAssemblyTypeName: SetPrefReward, Assembly-CSharp
         m_MethodName: SetDecor
@@ -50225,18 +50190,6 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 2086282571}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 964306292}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -50298,6 +50251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c28ffb84e50e2849a3d3cb98a49abc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shop: {fileID: 352446450}
 --- !u!1 &964607981 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 779357557067477051, guid: 4516a9c2337b4eb081390cec5c199c96,
@@ -63833,18 +63787,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 352446450}
-        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: SelectFace
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: Girl
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1202463698}
         m_TargetAssemblyTypeName: SetPrefReward, Assembly-CSharp
         m_MethodName: SetDecor
@@ -63892,18 +63834,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1202463693}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1202463696
 MonoBehaviour:
@@ -63955,6 +63885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c28ffb84e50e2849a3d3cb98a49abc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shop: {fileID: 352446450}
 --- !u!1 &1203084833 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 7c9fb993626aaf8488be64eb9feadbbc,
@@ -80228,18 +80159,6 @@ MonoBehaviour:
           m_StringArgument: Face_1
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 352446450}
-        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: SelectFace
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 972622521}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -80265,18 +80184,6 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 279577177}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1507419171}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -80338,6 +80245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c28ffb84e50e2849a3d3cb98a49abc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shop: {fileID: 352446450}
 --- !u!1 &1510274405
 GameObject:
   m_ObjectHideFlags: 0
@@ -87453,18 +87361,6 @@ MonoBehaviour:
           m_StringArgument: Hat_2
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 352446450}
-        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: SelectHat
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: Girl
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 713216736}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -87500,18 +87396,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1650545836}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1650545839
 MonoBehaviour:
@@ -87563,6 +87447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c28ffb84e50e2849a3d3cb98a49abc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shop: {fileID: 352446450}
 --- !u!1 &1651852643
 GameObject:
   m_ObjectHideFlags: 0
@@ -88484,18 +88369,6 @@ MonoBehaviour:
           m_StringArgument: Hat_1
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 352446450}
-        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: SelectHat
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: Girl
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 713216736}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -88521,18 +88394,6 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 149806927}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1671348926}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -88594,6 +88455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c28ffb84e50e2849a3d3cb98a49abc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shop: {fileID: 352446450}
 --- !u!1001 &1672154440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -97678,18 +97540,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 352446450}
-        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: SelectBack
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: Girl
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1823969047}
         m_TargetAssemblyTypeName: SetPrefReward, Assembly-CSharp
         m_MethodName: SetDecor
@@ -97727,18 +97577,6 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1393747599}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1823969042}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -97800,6 +97638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c28ffb84e50e2849a3d3cb98a49abc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shop: {fileID: 352446450}
 --- !u!4 &1824135678 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8423974037750839972, guid: a9b7e91fdc1b4ca381f100b98d504d4b,
@@ -104597,18 +104436,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 352446450}
-        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: SelectBody
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: Girl
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1969119341}
         m_TargetAssemblyTypeName: SetPrefReward, Assembly-CSharp
         m_MethodName: SetDecor
@@ -104656,18 +104483,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1969119336}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1969119339
 MonoBehaviour:
@@ -104719,6 +104534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c28ffb84e50e2849a3d3cb98a49abc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shop: {fileID: 352446450}
 --- !u!1001 &1970377023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -108583,18 +108399,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 352446450}
-        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: SelectBack
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: Girl
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2041227970}
         m_TargetAssemblyTypeName: SetPrefReward, Assembly-CSharp
         m_MethodName: SetDecor
@@ -108642,18 +108446,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 2041227965}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2041227968
 MonoBehaviour:
@@ -108705,6 +108497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c28ffb84e50e2849a3d3cb98a49abc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shop: {fileID: 352446450}
 --- !u!1 &2041422569 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7242450453789606078, guid: d5955369f5d230b4ca5e90b93e5e4a96,
@@ -112149,18 +111942,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 352446450}
-        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: SelectArms
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: Girl
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2096599750}
         m_TargetAssemblyTypeName: SetPrefReward, Assembly-CSharp
         m_MethodName: SetDecor
@@ -112196,18 +111977,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 2096599745}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2096599748
 MonoBehaviour:
@@ -112259,6 +112028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c28ffb84e50e2849a3d3cb98a49abc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shop: {fileID: 352446450}
 --- !u!1 &2096780782
 GameObject:
   m_ObjectHideFlags: 0
@@ -116961,7 +116731,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041F\u0435\u0440\u0441\u043E\u043D\u0430\u0436 \u043F\u043E\u043B\u0443\u0447\u0435\u043D"
+  m_text: "\u041D\u0430\u0433\u0440\u0430\u0434\u0430 \u0431\u0443\u0434\u0435\u0442
+    \u043F\u043E\u043B\u0443\u0447\u0435\u043D\u0430 \u0441\u0440\u0430\u0437\u0443
+    \u043F\u043E\u0441\u043B\u0435 \u0440\u0435\u043A\u043B\u0430\u043C\u044B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0b1b6fdc9a41c524da717de0318e36b8, type: 2}
   m_sharedMaterial: {fileID: 396871077730507444, guid: 0b1b6fdc9a41c524da717de0318e36b8,

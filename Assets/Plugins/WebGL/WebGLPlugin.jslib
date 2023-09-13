@@ -19,7 +19,7 @@ mergeInto(LibraryManager.library, {
    GetAuth: function () {
       //var player;
       var isAuthorzation = "no";
-        if (!(player.getMode() === 'lite')) 
+        if (player && !(player.getMode() === 'lite')) 
         {
           console.log('Player autorization: YES!!!' );
           isAuthorzation = "yes";
