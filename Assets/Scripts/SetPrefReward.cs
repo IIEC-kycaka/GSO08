@@ -47,6 +47,9 @@ public class SetPrefReward : MonoBehaviour
                 break;
         }
 
+        var rewardPanel = GameObject.FindGameObjectWithTag("RewardPanel");
+        var tmp = rewardPanel.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>();
+        tmp.text = "Награда была получена";
         gameObject.SetActive(false);
     }
 }
