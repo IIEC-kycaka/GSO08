@@ -7,6 +7,11 @@ public class SetPrefReward : MonoBehaviour
     public Shop shop;
 
     public GameObject rewardPanel;
+
+    private void Start()
+    {
+        Debug.Log(rewardPanel.name);
+    }
     public void SetDecor()
     {
         StartCoroutine(WaitUntilShowed());
@@ -48,7 +53,6 @@ public class SetPrefReward : MonoBehaviour
                 break;
         }
 
-        var rewardPanel = GameObject.FindGameObjectWithTag("RewardPanel");
         gameObject.SetActive(false);
         rewardPanel.SetActive(true);
     }
