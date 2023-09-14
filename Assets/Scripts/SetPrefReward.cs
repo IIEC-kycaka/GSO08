@@ -6,6 +6,7 @@ public class SetPrefReward : MonoBehaviour
 {
     public Shop shop;
 
+    public GameObject rewardPanel;
     public void SetDecor()
     {
         StartCoroutine(WaitUntilShowed());
@@ -48,8 +49,7 @@ public class SetPrefReward : MonoBehaviour
         }
 
         var rewardPanel = GameObject.FindGameObjectWithTag("RewardPanel");
-        var tmp = rewardPanel.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>();
-        tmp.text = "Награда была получена";
         gameObject.SetActive(false);
+        rewardPanel.SetActive(true);
     }
 }
